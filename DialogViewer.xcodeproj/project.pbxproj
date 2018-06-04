@@ -16,6 +16,8 @@
 		5E59FAAE20C5690800AC1F68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E59FAAD20C5690800AC1F68 /* main.m */; };
 		5E59FAB820C5690800AC1F68 /* DialogViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E59FAB720C5690800AC1F68 /* DialogViewerTests.m */; };
 		5E59FAC320C5690800AC1F68 /* DialogViewerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E59FAC220C5690800AC1F68 /* DialogViewerUITests.m */; };
+		5E59FAD220C56A0B00AC1F68 /* ContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E59FAD120C56A0B00AC1F68 /* ContentCell.m */; };
+		5E59FAD520C56D5200AC1F68 /* HeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E59FAD420C56D5200AC1F68 /* HeaderCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		5E59FABE20C5690800AC1F68 /* DialogViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DialogViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E59FAC220C5690800AC1F68 /* DialogViewerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DialogViewerUITests.m; sourceTree = "<group>"; };
 		5E59FAC420C5690800AC1F68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E59FAD020C56A0B00AC1F68 /* ContentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentCell.h; sourceTree = "<group>"; };
+		5E59FAD120C56A0B00AC1F68 /* ContentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentCell.m; sourceTree = "<group>"; };
+		5E59FAD320C56D5200AC1F68 /* HeaderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderCell.h; sourceTree = "<group>"; };
+		5E59FAD420C56D5200AC1F68 /* HeaderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,10 @@
 				5E59FAAC20C5690800AC1F68 /* Info.plist */,
 				5E59FAAD20C5690800AC1F68 /* main.m */,
 				5E59FAA420C5690400AC1F68 /* DialogViewer.xcdatamodeld */,
+				5E59FAD020C56A0B00AC1F68 /* ContentCell.h */,
+				5E59FAD120C56A0B00AC1F68 /* ContentCell.m */,
+				5E59FAD320C56D5200AC1F68 /* HeaderCell.h */,
+				5E59FAD420C56D5200AC1F68 /* HeaderCell.m */,
 			);
 			path = DialogViewer;
 			sourceTree = "<group>";
@@ -268,7 +278,9 @@
 				5E59FAA620C5690400AC1F68 /* DialogViewer.xcdatamodeld in Sources */,
 				5E59FAA020C5690400AC1F68 /* ViewController.m in Sources */,
 				5E59FAAE20C5690800AC1F68 /* main.m in Sources */,
+				5E59FAD220C56A0B00AC1F68 /* ContentCell.m in Sources */,
 				5E59FA9D20C5690400AC1F68 /* AppDelegate.m in Sources */,
+				5E59FAD520C56D5200AC1F68 /* HeaderCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +452,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3QQHC8AMXM;
 				INFOPLIST_FILE = DialogViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,6 +470,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3QQHC8AMXM;
 				INFOPLIST_FILE = DialogViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

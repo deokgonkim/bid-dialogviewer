@@ -49,6 +49,11 @@
     UICollectionViewLayout *layout = self.collectionViewLayout;
     UICollectionViewFlowLayout *flow = (UICollectionViewFlowLayout *)layout;
     flow.sectionInset = UIEdgeInsetsMake(10, 20, 30, 20);
+    
+    flow.headerReferenceSize = CGSizeMake(100, 25);
+    
+    [self.collectionView registerClass:[HeaderCell class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HEADER"];
+    
 }
 
 
@@ -79,6 +84,16 @@
     ContentCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"CONTENT" forIndexPath:indexPath];
     cell.text = words[indexPath.row];
     return cell;
+}
+
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+    if ([kind isEqual:UICollectionElementKindSectionHeader]) {
+        HeaderCell *cell = [self.collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"HEADER" forIndexPath:indexPath];
+        
+        cell.text = self.sections[indexPath.section][@"header"];
+        return cell;
+    }
+    return nil;
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
