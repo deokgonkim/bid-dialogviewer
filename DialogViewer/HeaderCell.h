@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HeadCell.h
 //  DialogViewer
 //
 //  Created by Deokgon Kim on 2018. 6. 4..
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UICollectionViewController
+#import "ContentCell.h"
 
+@interface HeaderCell : ContentCell
 
 @end
-
